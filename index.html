@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/font/stylesheet.css">
+    <title>Главная страница</title>
+  </head>
+  <body>
+
+    <div class="modal fade" id="phoneModal" tabindex="-1" aria-labelledby="phoneModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="phoneModalLabel">Перезвонить мне</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class = "form__content">
+                        <input type = "text" placeholder="Ваше имя">
+                        <input type = "text" placeholder="Телефон или электронная почта">
+                        <textarea placeholder="Ваш вопрос"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit">Отправить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+    <div class = "wrapper">
+
+    <header class="header">
+            <div class = "header__top">
+                <div class = "header__top-content">
+                    <div class = "header__top-left">
+                        <a href = "index.html"><img src = "public/images/logo.svg" alt="logo"></a>
+                    </div>
+                    <div class = "header__top-center center">
+                        <p class = "center__title">Юридические услуги для бизнеса и частных лиц на территории Российской Федерации</p>
+                        <p class = "center__description">г. Пенза, ул. Московская, д. 29</p>
+                    </div>
+                    <div class = "header__top-right right">
+                        <div class = "right__btn-block">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#phoneModal">Перезвонить мне</button>
+                        </div>
+                        <div class = "right__items">
+                            <div class = "right__item">
+                                <img src = "public/images/mail-icon.svg" alt="mail-icon">
+                                <p>help@vsude.online</p>
+                            </div>
+                            <div class = "right__item">
+                                <img src = "public/images/phone-icon.svg" alt="phone-icon">
+                                <p>+7 (963) 111 - 000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "header__bottom">
+                <div class = "header__bottom-content">
+                    <ul>
+                        <li class="menu-link"><a href = "catalog.html">Арбитражный юрист</a></li>
+                        <li class="menu-link"><a href = "catalog.html">Земельный юрист</a></li>
+                        <li class="menu-link"><a href = "catalog.html">Наследственный юрист</a></li>
+                        <li class="menu-link"><a href = "catalog.html">Недвижимость</a></li>
+                        <li class="menu-link"><a href = "catalog.html">Автоюрист</a></li>
+                        <li class="menu-link"><a href = "catalog.html">Семейный юрист</a></li>
+                        <li class="menu-link"><a href = "about.html">О нас</a></li>
+                    </ul>
+                </div>
+            </div>
+    </header>
+
+        <!-- Main block -->
+
+        <section class = "main-block">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1447023029226-ef8f6b52e3ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+        <!-- consultation block -->
+
+        <section class = "consultation-block">
+            <div class = "consultation-block__content consultation__content">
+                <p class = "consultation__content-title">Записаться на консультацию</p>
+                <form class="consultation__content-form form">
+                    <div class = "form__row">
+                        <input type="text" placeholder="Электронная почта">
+                        <input type="text" placeholder="Имя">
+                        <input type="text" placeholder="Телефон">                           
+                    </div>
+                    <div class = "form__row">
+                        <textarea placeholder="Ваш вопрос"></textarea>
+                    </div>
+                    <div class = "form__submit">
+                        <button type="submit">Записаться на консультацию</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- map block -->
+
+        <section class = "map-block">
+             <div class = "map-block__content">
+                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс.Карты</a><a href="https://yandex.ru/maps/?ll=37.855571%2C55.662663&utm_medium=mapframe&utm_source=maps&z=9.24" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты — транспорт, навигация, поиск мест</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUmB2fcWB" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;" loading="lazy"></iframe></div>
+             </div>
+        </section>
+
+        <!-- footer block -->
+
+        <footer class = "footer">
+            <div class = "footer__content">
+                <div class = "footer__content-left">
+                    <a href = "index.html"><img src = "public/images/logo-white.svg" alt=""></a>
+                    <p>Все права защищены © 2013 - 2021</p>
+                </div>
+                <div class = "footer__content-center content-center">
+                     <div class = "content-center__column column">
+                         <ul>
+                            <a href = "catalog.html"><li class="column__item">Арбитражный юрист</li></a>
+                            <a href = "catalog.html"><li class="column__item">Земельный юрист</li></a>
+                            <a href = "catalog.html"><li class="column__item">Наследственный юрист</li></a>
+                         </ul>
+                     </div>
+                     <div class = "content-center__column column">
+                        <ul>
+                            <a href = "catalog.html"><li class="column__item">Недвижимость</li></a>
+                            <a href = "catalog.html"><li class="column__item">Автоюрист</li></a>
+                            <a href = "catalog.html"><li class="column__item">Семейный юрист</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__content-right content-right">
+                    <div class = "content-right__items">
+                         <div class = "right__items-item">
+                             <img src = "public/images/phone-icon-white.svg" alt="phone-icon">
+                             <span>+7 (963) 1111 - 000</span>
+                         </div>
+                         <div class = "right__items-item">
+                            <img src = "public/images/time-icon.svg" alt="time-icon">
+                            <span>Прием звонков с 10.00 до 18.00 с <br />ПН. по ПТ.
+                            </span>
+                        </div>
+                        <div class = "right__items-item">
+                            <img src = "public/images/map-icon-white.svg" alt="phone-icon">
+                            <span>г. Пенза, ул. Московская, д. 29</span>
+                        </div>
+                        <div class = "right__items-item">
+                            <img src = "public/images/message-white.svg" alt="phone-icon">
+                            <span>law@vsude.online</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "copyright-mobile">
+                    <p>Все права защищены © 2013 - 2021</p>
+                </div>
+            </div>
+        </footer>
+       
+        <!-- Mobile bottom menu -->
+        
+        <div class = "mobile-sheet">
+            <div class = "mobile-sheet__content sheet__content">
+                <div class = "sheet__content-row">
+                    <div class = "sheet__content-row__item row__item">
+                        <button class="row__item-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                            <img src = "public/images/toggle.svg" alt="">
+                            Меню
+                        </button>
+                    </div>
+                </div>
+                <div class = "sheet__content-row">
+                    <a href = "tel:+7963111000">
+                        <div class = "row__item-phone">
+                            Позвонить
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Меню</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body small">
+                <div class = "offcanvas-body__content">
+                    <ul>
+                        <a href = "catalog.html"><li class="nav-link__mobile">Арбитражный юрист</li></a>
+                        <a href = "catalog.html"><li class="nav-link__mobile">Земельный юрист</li></a>
+                        <a href = "catalog.html"><li class="nav-link__mobile">Наследственный юрист</li></a>
+                        <a href = "catalog.html"><li class="nav-link__mobile">Недвижимость</li></a>
+                        <a href = "catalog.html"><li class="nav-link__mobile">Автоюрист</li></a>
+                        <a href = "catalog.html"><li class="nav-link__mobile">Семейный юрист</li></a>
+                        <a href = "about.html"><li class="nav-link__mobile">О нас</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu end -->
+
+    </div>
+  </body>
+</html>

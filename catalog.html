@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/font/stylesheet.css">
+    <title>Каталог услуг</title>
+  </head>
+  <body>
+
+    <div class="modal fade" id="phoneModal" tabindex="-1" aria-labelledby="phoneModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="phoneModalLabel">Перезвонить мне</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class = "form__content">
+                            <input type = "text" placeholder="Ваше имя">
+                            <input type = "text" placeholder="Телефон или электронная почта">
+                            <textarea placeholder="Ваш вопрос"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+    <div class = "wrapper">
+        <header class="header">
+            <div class = "header__top">
+                <div class = "header__top-content">
+                    <div class = "header__top-left">
+                        <a href = "index.html"><img src = "public/images/logo.svg" alt="logo"></a>
+                    </div>
+                    <div class = "header__top-center center">
+                        <p class = "center__title">Юридические услуги для бизнеса и частных лиц на территории Российской Федерации</p>
+                        <p class = "center__description">г. Пенза, ул. Московская, д. 29</p>
+                    </div>
+                    <div class = "header__top-right right">
+                        <div class = "right__btn-block">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#phoneModal">Перезвонить мне</button>
+                        </div>
+                        <div class = "right__items">
+                            <div class = "right__item">
+                                <img src = "public/images/mail-icon.svg" alt="mail-icon">
+                                <p>help@vsude.online</p>
+                            </div>
+                            <div class = "right__item">
+                                <img src = "public/images/phone-icon.svg" alt="phone-icon">
+                                <p>+7 (963) 111 - 000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "header__bottom">
+                <div class = "header__bottom-content">
+                    <ul>
+                        <li class="menu-link"><a href = "catalog.html">Арбитражный юрист</a></li>
+                        <li class="menu-link"><a href = "catalog.html">Земельный юрист</a></li>
+                        <li class="menu-link"><a href = "catalog.html">Наследственный юрист</a></li>
+                        <li class="menu-link"><a href = "catalog.html">Недвижимость</a></li>
+                        <li class="menu-link"><a href = "catalog.html">Автоюрист</a></li>
+                        <li class="menu-link"><a href = "catalog.html">Семейный юрист</a></li>
+                        <li class="menu-link"><a href = "about.html">О нас</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section class="main-block">
+             <div class = "catalog__content catalog">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Арбитражный юрист</li>
+                    </ol>
+                </nav> 
+                <div class = "catalog__services-block services-block">
+                    <p class = "services-block__title">Арбитражный юрист</p>
+                    <div class = "services-block__cards cards">
+                        <a href = "detail.html">
+                            <div class = "cards__item">
+                                <div class = "cards__item-img">
+                                    <img src = "https://s3-alpha-sig.figma.com/img/1828/258c/8b91ba88b238deb214ee29ba89015e1a?Expires=1632096000&Signature=KbahDkNIFQxO0D3NTH4M-4uV5A1KYZXrkByuDiBmPj4tuE4m5qgl2Uyizn5M7koB1S5YbLFbiX945gE-bYKd7FhvAFm0dNQ9b2iRLGk1DyEnuy6jNH8i1Zym9hsdfOB9DvU~-INsdSU~X0TIw1-55h8a9C2RZv3jF~3COV6qrkn2A9megYoB75q2JI-lL~iDZV6UmhOKI2YMcixfFq9MxpjsyzMWpIbZPsr3VsdxrewQpJcKjnPjNxEhlaOQ9u54eOtGqccugdig96IN9kv7vhzEibpolbdQ~jZ9AqHtFnQJ6O-hVuVgv3f1oolN678K0oyJoYHsxaxXkbcZH-148w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">
+                                </div>
+                                <div class = "cards__item-content item-content">
+                                    <p class = "item-content__title">Банкротство юридических лиц</p>
+                                    <p class = "item-content__description">Существуют риски наступления процедуры банкротства? Ситуация требует действий? Мы поможем решить проблему для работы</p>
+                                    <p class = "item-content__price">от 125000 рублей</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href = "detail.html">
+                            <div class = "cards__item">
+                                <div class = "cards__item-img">
+                                    <img src = "https://s3-alpha-sig.figma.com/img/ad1b/a9e3/f47efc36486322f45404cc57d44ba0db?Expires=1632096000&Signature=WsSVitV7~sK58dl9CaWvafBRz441dwgf9ifx1zsAFSTeexJY2DkGmTCVpBP8jD2o~ukiE-G34MAZdXDTHlbVJFSqJstiAilwxVywMiUMS2sBBHaS1WWjassqBf4TH8feGuGLxuDhEj-soS9rH9OUizKtwiXOe-ET~dBZTw2wB8RjUEsiGq9spGXaCv-Os8ZSl42i2vGQ9ekMlAVKjL2m~KxmjCHNBxZcG9g7AAJl6Gc8qPyfxoDWYlqKH~9OpD0x~pHG2TYpsVDYEs1zp4BfpY6Fyq~mo6KOjnCDpeSdbaBcDafK5Vzn8UQA~BjdvL2nsGFas44yK5KfC1duiLwsfA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">
+                                </div>
+                                <div class = "cards__item-content item-content">
+                                    <p class = "item-content__title">Земельные споры</p>
+                                    <p class = "item-content__description">Существуют риски наступления процедуры банкротства? Ситуация требует действий? Мы поможем решить проблему</p>
+                                    <p class = "item-content__price">от 125000 рублей</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href = "detail.html">
+                            <div class = "cards__item">
+                                <div class = "cards__item-img">
+                                    <img src = "https://s3-alpha-sig.figma.com/img/e1e9/d465/58d0edb0288289f72431895f610b0312?Expires=1632096000&Signature=OA15tI7rFYVqYcsOak2u6YkEo1WOv22LseKQVu4-RO3521mMxiBT7ZvShtzRRU0~X2acj1MthogdyN27Bp1Df3wHC8LPANlJW0MMareorvUcZlWe1w54ahUM5sjyayet4fHKqiyPWhnfImlJrmQzan~WDPPzxkXhxB~7u2ErbQYtLhm5ocHwKtBBc7BBgk6dJC893BOa-5Q6DwVzgBLzTbT6BG~oIXfdIrTdBB0JmBXxPodqdG2r3JAVN~hNUO9EFUvZmij0-nKG4HDfF8gg0QqVInK84LnIGo3Ej2kHXU8h~jkZLnEKNPcFmCpjmW6UveYaBYblHM1mKIygVEUUbg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">
+                                </div>
+                                <div class = "cards__item-content item-content">
+                                    <p class = "item-content__title">Сопровождение сделок купли-продажи (Риэлтор)</p>
+                                    <p class = "item-content__description">Что бы Вам не предстояло купить, а может быть и продать - всё нуждается в безопасности и наддежности совершения сделки.</p>
+                                    <p class = "item-content__price">от 125000 рублей</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href = "detail.html">
+                            <div class = "cards__item">
+                                <div class = "cards__item-img">
+                                    <img src = "https://s3-alpha-sig.figma.com/img/fdeb/fea5/785513b245d053926f64625e630ea9f1?Expires=1632096000&Signature=Jc4M9kmEhWK-DvWvTG1uwK1oBDzPxFRMK2thBfcbAQg2PpfT~yJeR0yesfVS-WfRYYWR6Z9rVWzguzYX5FZcmIicd54LThPmzykJhE5UoXM3oEx3SN~-xhcT0gEgEYoDoWcRvbQIPnS0b2aX2sJuzKWObXU07KURHoeY72KhISMXZiSOWhdHXRKEXP2M0F~6JaiR8D-Wa8Zl7VFtAKmtU4T~WqQo25Ijh~9l-4jTEzcomCb4-e1wVDYUtdoGssxnsVzfooHy8iD9Pvg2YqS-YEL1qfTdDU1e2DlR2q3hs9meS9ZGq4GV2EIvd63LiduZtisXJXxTgfoBIv-yyDCdnw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">
+                                </div>
+                                <div class = "cards__item-content item-content">
+                                    <p class = "item-content__title">Внештатный юрист</p>
+                                    <p class = "item-content__description">Нет собственного юриста в штате? Хотите получать услуги профессионала, по цене бюджетного специалиста?</p>
+                                    <p class = "item-content__price">от 125000 рублей</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href = "detail.html">
+                            <div class = "cards__item">
+                                <div class = "cards__item-img">
+                                    <img src = "https://s3-alpha-sig.figma.com/img/58a0/761d/38bd0ea406e7ce659f7958fa518004d0?Expires=1632096000&Signature=K7NfGZghAI1RJItAfLyYj4EB9dt7I8hd1DH0T3Cah9DTuYYJkOnS9EquVMZfyExM2rtZPwStUfImYnbdj6Erc4ncf4UoHKmUVyYBMFwXdeOTgt85J9geJSWZO8eMHhncooE9Rk2vAjfIwIglAGKQP9l6z4C~CJaMHq24NXd0032THjiBiClhJsPi5ZlzaiJLIhQDW9AqfP2So90f8oEL5YeoTNJfptY3lCBLJRDJ0kEDv8CKQZIPtKRHGlxTEI5X5BL4UDQMTbHDfQCkaQZmcbJVNKQsWvtHTGvz2wLrcrhqvXbqF3MO506rBTrtm2Aw~T8npE~ZzIEGSB3OC5RmHw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">
+                                </div>
+                                <div class = "cards__item-content item-content">
+                                    <p class = "item-content__title">Досудебное урегулирование споров</p>
+                                    <p class = "item-content__description">Арбитражный процесс предписывает обязательное соблюдение досудебного порядка урегулирования споров.</p>
+                                    <p class = "item-content__price">от 125000 рублей</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class = "catalog__pagination">
+                     <div class="catalog__pagination-content pagination">
+                         <ul class = "pagination__list">
+                             <a href = "#"><li class="pagination__item active__item">1</li></a>
+                             <a href = "#"><li class="pagination__item">2</li></a>
+                             <a href = "#"><li class="pagination__item">3</li></a>
+                             <a href = "#"><li class="pagination__item">4</li></a>
+                             <a href = "#"><li class="pagination__item">5</li></a>
+                             <a href = "#"><li class="pagination__item">...</li></a>
+                             <a href = "#"><li class="pagination__item">100</li></a>
+                         </ul>
+                     </div>
+                </div>
+             </div>
+        </section>
+        
+        <footer class = "footer">
+            <div class = "footer__content">
+                <div class = "footer__content-left">
+                    <a href = "index.html"><img src = "public/images/logo-white.svg" alt=""></a>
+                    <p>Все права защищены © 2013 - 2021</p>
+                </div>
+                <div class = "footer__content-center content-center">
+                     <div class = "content-center__column column">
+                         <ul>
+                            <a href = "catalog.html"><li class="column__item">Арбитражный юрист</li></a>
+                            <a href = "catalog.html"><li class="column__item">Земельный юрист</li></a>
+                            <a href = "catalog.html"><li class="column__item">Наследственный юрист</li></a>
+                         </ul>
+                     </div>
+                     <div class = "content-center__column column">
+                        <ul>
+                            <a href = "catalog.html"><li class="column__item">Недвижимость</li></a>
+                            <a href = "catalog.html"><li class="column__item">Автоюрист</li></a>
+                            <a href = "catalog.html"><li class="column__item">Семейный юрист</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__content-right content-right">
+                    <div class = "content-right__items">
+                         <div class = "right__items-item">
+                             <img src = "public/images/phone-icon-white.svg" alt="phone-icon">
+                             <span>+7 (963) 1111 - 000</span>
+                         </div>
+                         <div class = "right__items-item">
+                            <img src = "public/images/time-icon.svg" alt="time-icon">
+                            <span>Прием звонков с 10.00 до 18.00 с <br />ПН. по ПТ.
+                            </span>
+                        </div>
+                        <div class = "right__items-item">
+                            <img src = "public/images/map-icon-white.svg" alt="phone-icon">
+                            <span>г. Пенза, ул. Московская, д. 29</span>
+                        </div>
+                        <div class = "right__items-item">
+                            <img src = "public/images/message-white.svg" alt="phone-icon">
+                            <span>law@vsude.online</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "copyright-mobile">
+                    <p>Все права защищены © 2013 - 2021</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Mobile bottom menu -->
+        
+        <div class = "mobile-sheet">
+            <div class = "mobile-sheet__content sheet__content">
+                <div class = "sheet__content-row">
+                    <div class = "sheet__content-row__item row__item">
+                        <button class="row__item-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                           <img src = "public/images/toggle.svg" alt="">
+                           Меню
+                        </button>
+                    </div>
+                </div>
+                <div class = "sheet__content-row">
+                    <a href = "tel:+7963111000">
+                        <div class = "row__item-phone">
+                           Позвонить
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Меню</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body small">
+                <div class = "offcanvas-body__content">
+                    <ul>
+                       <a href = "catalog.html"><li class="nav-link__mobile">Арбитражный юрист</li></a>
+                       <a href = "catalog.html"><li class="nav-link__mobile">Земельный юрист</li></a>
+                       <a href = "catalog.html"><li class="nav-link__mobile">Наследственный юрист</li></a>
+                       <a href = "catalog.html"><li class="nav-link__mobile">Недвижимость</li></a>
+                       <a href = "catalog.html"><li class="nav-link__mobile">Автоюрист</li></a>
+                       <a href = "catalog.html"><li class="nav-link__mobile">Семейный юрист</li></a>
+                       <a href = "about.html"><li class="nav-link__mobile">О нас</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

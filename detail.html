@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/font/stylesheet.css">
+    <title>Страница услуги</title>
+  </head>
+  <body>
+
+    <div class="modal fade" id="phoneModal" tabindex="-1" aria-labelledby="phoneModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="phoneModalLabel">Перезвонить мне</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class = "form__content">
+                            <input type = "text" placeholder="Ваше имя">
+                            <input type = "text" placeholder="Телефон или электронная почта">
+                            <textarea placeholder="Ваш вопрос"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+    <div class = "wrapper">
+
+        <header class="header">
+            <div class = "header__top">
+                <div class = "header__top-content">
+                    <div class = "header__top-left">
+                        <a href = "index.html"><img src = "public/images/logo.svg" alt="logo"></a>
+                    </div>
+                    <div class = "header__top-center center">
+                        <p class = "center__title">Юридические услуги для бизнеса и частных лиц на территории Российской Федерации</p>
+                        <p class = "center__description">г. Пенза, ул. Московская, д. 29</p>
+                    </div>
+                    <div class = "header__top-right right">
+                        <div class = "right__btn-block">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#phoneModal">Перезвонить мне</button>
+                        </div>
+                        <div class = "right__items">
+                            <div class = "right__item">
+                                <img src = "public/images/mail-icon.svg" alt="mail-icon">
+                                <p>help@vsude.online</p>
+                            </div>
+                            <div class = "right__item">
+                                <img src = "public/images/phone-icon.svg" alt="phone-icon">
+                                <p>+7 (963) 111 - 000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "header__bottom">
+                <div class = "header__bottom-content">
+                    <ul>
+                        <li class="menu-link"><a href = "catalog.html">Арбитражный юрист</a></li>
+                        <li class="menu-link"><a href = "catalog.html">Земельный юрист</a></li>
+                        <li class="menu-link"><a href = "catalog.html">Наследственный юрист</a></li>
+                        <li class="menu-link"><a href = "catalog.html">Недвижимость</a></li>
+                        <li class="menu-link"><a href = "catalog.html">Автоюрист</a></li>
+                        <li class="menu-link"><a href = "catalog.html">Семейный юрист</a></li>
+                        <li class="menu-link"><a href = "about.html">О нас</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class = "main-block">
+            <div class = "detail-block__content detail-content">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                      <li class="breadcrumb-item active" aria-current="page"><a href="catalog.html">Арбитражный юрист</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Банкротство юридических лиц</li>
+                    </ol>
+                </nav>
+                <div class = "detail-content__screen content__screen">
+                    <div class = "content__screen-left detail-content">
+                        <div class = "detail-content__top-block">
+                            <div class = "detail-content__top content__top">
+                              <p class = "content__top-title">Банкротство юридических лиц</p>
+                              <p class = "content__top-price">от 25.000 рублей</p>
+                            </div>
+                            <div class = "detail-content__text">
+                              <p>Арбитражный процесс — это наиболее сложный механизм решения спорных вопросов. В АС работают судьи-профессионалы, которые отлично знают и соблюдают Арбитражный Процессуальный Кодекс и другие законы РФ. Поэтому давить на жалость или идти в этот суд на удачу - не имеет смысла!
+                                Работают наши юристы в Пензе и любом регионе РФ. Способны разрешать спорные ситуации любой сложности. Огромный опыт в разных сферах бизнеса помогает находить законный выход, даже в самых запутанных схемах. Главное понять язык Арбитражного процесса, что для других юристов - непостижимо. Многие не признают этот факт. Но результаты, которых мы достигаем совместно с партнерами, говорят о том, что нужно находить суть конфликта (Предмет и основания иска) и правильно её обосновывать в суде (выбор способа защиты права). В других случаях победить не удастся!
+                                Арбитражный юрист или юрист по арбитражным делам должен обладать не только высшим юридическим образованием, знанием и опытом работы в Арбитражных судах РФ, но и определенными личными качествами, харизмой, способностью быстро реагировать на любые изменения в процессе. 
+                                Мы готовы оказать комплексное ведение споров в АС профессиональным арбитражным юристом в суде Пензы, Москвы и любых регионов РФ с момента получения или отправки претензии, до рассмотрения кассационной жалобы в высшей инстанции и последующим исполнительным производством, если потребуется.
+                                Существуют варианты работы с гарантией результата. Обговаривается в каждом конкретном случае. Индивидуальный подход. Абсолютная конфиденциальность. Работаем в любом регионе Российской Федерации. В любом суде. На любой стадии процесса.     Арбитражный адвокат и арбитражный юрист понятия тождественные, другими словами — это человек с высшим юридическим образованием, работающий по сопровождению судебного процесса в арбитражном суде.
+                                Адвокат — это человек с высшим юридическим образованием и статусом, позволяющим работать в уголовных судах и защищать людей, подозреваемых в преступлениях.
+                                Выбирать адвоката или юриста для представления интересов в арбитражном суде это Ваше право! Они могут одинаково работать и осуществлять Вашу защиту в арбитражном суде (Далее по тексту «АС»).
+                                Просим обратить внимание на факт, что адвокат много времени тратит на работу в уголовном суде, а наши юристы всё свое время расходую на непрерывную практическую работу в арбитражном процессе.
+                                Сделайте правильные выводы на тему, выбрать адвоката или юриста в АС?!
+                                С чего начинает работу юрист по арбитражным спорам в суде?</p>
+                            </div>
+                        </div>
+                        <div class = "detail-content__bottom content__bottom">
+                            <p class = "content__bottom-title">Оставить заявку</p>
+                            <form class = "content__bottom-form bottom-form">
+                                <div class = "bottom-form__content form__content">
+                                    <div class = "form__content-row">
+                                        <input type="text" placeholder="Ваше имя">
+                                        <input type="text" placeholder="Номер телефона">
+                                    </div>
+                                    <div class = "form__content-row">
+                                        <textarea placeholder="Комментарий"></textarea>
+                                    </div>
+                                    <div class = "form__content-btn">
+                                        <button type="submit">Отправить</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class = "content__screen-right screen-right">
+                        <div class = "screen-right__content">
+                            <img src = "https://s3-alpha-sig.figma.com/img/0fed/3197/e7736c5c775dcc5f4ac2247679a2a106?Expires=1632096000&Signature=VdKkBfW42HdxU9pIECzJYeDtTAe3sfgKW5U1WoROfapO4-URagrh~OzFCOJA4aSsI6pnWYe37MN86jEcgrMOhPCR-yidizF1nvGkD6W72Va6ynkA6DFrscJfmJIUFRX-WzY6HPt8vUq4pN7kySBx5msamHkx2JaPJ420NZRuJI0L1JVCVuJ1aFobud9FEYLzJViB27l544a~QusAzunp6IWXBF3CwnWwwS6fHnYBCf5aaqT0NfFBS~5gFTMcCXwn~RgvjZ5O~Z9qzyd0a68TknM-PVcrlS7GvrQbPVk3C5Qd6mRVFlC9~EtMoMMRgLebmEpJ~RISM3nyE494OHoxsA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class = "footer">
+            <div class = "footer__content">
+                <div class = "footer__content-left">
+                    <a href = "index.html"><img src = "public/images/logo-white.svg" alt=""></a>
+                    <p>Все права защищены © 2013 - 2021</p>
+                </div>
+                <div class = "footer__content-center content-center">
+                     <div class = "content-center__column column">
+                         <ul>
+                            <a href = "catalog.html"><li class="column__item">Арбитражный юрист</li></a>
+                            <a href = "catalog.html"><li class="column__item">Земельный юрист</li></a>
+                            <a href = "catalog.html"><li class="column__item">Наследственный юрист</li></a>
+                         </ul>
+                     </div>
+                     <div class = "content-center__column column">
+                        <ul>
+                            <a href = "catalog.html"><li class="column__item">Недвижимость</li></a>
+                            <a href = "catalog.html"><li class="column__item">Автоюрист</li></a>
+                            <a href = "catalog.html"><li class="column__item">Семейный юрист</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__content-right content-right">
+                    <div class = "content-right__items">
+                        <div class = "right__items-item">
+                             <img src = "public/images/phone-icon-white.svg" alt="phone-icon">
+                             <span>+7 (963) 1111 - 000</span>
+                        </div>
+                        <div class = "right__items-item">
+                            <img src = "public/images/time-icon.svg" alt="time-icon">
+                            <span>Прием звонков с 10.00 до 18.00 с <br />ПН. по ПТ.
+                            </span>
+                        </div>
+                        <div class = "right__items-item">
+                            <img src = "public/images/map-icon-white.svg" alt="phone-icon">
+                            <span>г. Пенза, ул. Московская, д. 29</span>
+                        </div>
+                        <div class = "right__items-item">
+                            <img src = "public/images/message-white.svg" alt="phone-icon">
+                            <span>law@vsude.online</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "copyright-mobile">
+                    <p>Все права защищены © 2013 - 2021</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Mobile bottom menu -->
+        
+        <div class = "mobile-sheet">
+            <div class = "mobile-sheet__content sheet__content">
+                <div class = "sheet__content-row">
+                    <div class = "sheet__content-row__item row__item">
+                        <button class="row__item-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                           <img src = "public/images/toggle.svg" alt="">
+                           Меню
+                        </button>
+                    </div>
+                </div>
+                <div class = "sheet__content-row">
+                    <a href = "tel:+7963111000">
+                        <div class = "row__item-phone">
+                           Позвонить
+                        </div>
+                    </a>
+                </div>
+            </div>
+       </div>
+
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Меню</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body small">
+                <div class = "offcanvas-body__content">
+                    <ul>
+                       <a href = "catalog.html"><li class="nav-link__mobile">Арбитражный юрист</li></a>
+                       <a href = "catalog.html"><li class="nav-link__mobile">Земельный юрист</li></a>
+                       <a href = "catalog.html"><li class="nav-link__mobile">Наследственный юрист</li></a>
+                       <a href = "catalog.html"><li class="nav-link__mobile">Недвижимость</li></a>
+                       <a href = "catalog.html"><li class="nav-link__mobile">Автоюрист</li></a>
+                       <a href = "catalog.html"><li class="nav-link__mobile">Семейный юрист</li></a>
+                       <a href = "about.html"><li class="nav-link__mobile">О нас</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </body>
+</html>
